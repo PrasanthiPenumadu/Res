@@ -91,7 +91,7 @@ private static void writeToFileZip1(FileSystem zipFs,String[] data)throws IOExce
             System.out.println(e.getClass().getSimpleName() + " - " + e.getMessage());
 
             for(Throwable t:e.getSuppressed())
-                System.out.println("Suppressed: " + t.getMessage());
+                System.out.println("Suppressed by: " + t.getMessage());
         }
     }
 }
